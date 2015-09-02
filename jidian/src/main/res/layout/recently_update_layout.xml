@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:layout_marginLeft="@dimen/normal_margin"
+    android:layout_marginRight="@dimen/normal_margin"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="52dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin">
+
+            <TextView
+                android:id="@+id/pro_name_in_recently"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:text="小王子"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_name_in_hotpush_recently"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/light_greey"
+                    android:text="安东尼"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="wrap_content" />
+
+                <com.qidianliterature.jidian.view.RoundImageView
+                    android:id="@+id/user_profile_in_hotpush_recently"
+                    android:layout_width="26dp"
+                    android:src="@drawable/profile1"
+                    android:layout_height="26dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/light_greey"
+            android:lines="3"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/outer_sight_txt_size"
+            android:ellipsize="end"
+            android:text="2013年7月22日，新京报独家报道《隐秘“大师”王林的金钱王国》一文，率先披露“王林以大师自居，自称会特异功能，与政府高官关系密切，有多种生财之道：给商人放高利贷，收高昂拜师费”等等，亦提及王林与邹勇的纠纷。"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

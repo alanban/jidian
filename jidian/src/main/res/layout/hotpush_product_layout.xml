@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent">
+
+    <!-- 文章的布局 -->
+
+    <LinearLayout
+        android:id="@+id/product_fragment"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_height="179dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/hotpush_product_profile"
+                android:layout_width="@dimen/hotpush_product_profile_size"
+                android:src="@mipmap/app_logo"
+                android:layout_height="@dimen/hotpush_product_profile_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/hot_product_name_in_hotpush"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="13.5dp"
+                    android:text="如果没有如果"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/hot_product_type_in_hotpush"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/hot_product_name_in_hotpush"
+                    android:textColor="@color/light_greey"
+                    android:layout_marginTop="2dp"
+                    android:textSize="11dp"
+                    android:text="文艺文学"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/goto_read_in_hotpush"
+                    android:layout_below="@+id/hot_product_type_in_hotpush"
+                    android:layout_width="50dp"
+                    android:text="阅读"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/outer_sight_txt_size"
+                    android:background="@drawable/theme_btn_selector_corner_bk"
+                    android:layout_height="25dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/litera_content"
+            android:textColor="@color/light_greey"
+            android:textSize="13dp"
+            android:text="数据库模式定义语言DDL(Data Definition Language)，是用于描述数据库中要存储的现实世界实体的语言。一个数据库模式包含该数据库中所有实体的描述定义。这些定2013年8月6日 - 这篇文章主要介绍了DDL、DML和DCL的区别与理解,需要的朋友可以参考下... DDL(Data Definition Language 数据定义语言)用于操作对象和对象的属性,这种对象包括数据库本身"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:lines="5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!-- 发布人以及创客的布局 -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_marginLeft="1dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_height="179dp">
+
+        <LinearLayout
+            android:id="@+id/author_fragment_head_layout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <!-- 发起人的头像 -->
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@mipmap/app_logo"
+                android:layout_marginLeft="5dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/username_in_hotpush"
+                    android:layout_width="wrap_content"
+                    android:text="李健"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/user_info_in_hotpush"
+                    android:layout_width="wrap_content"
+                    android:text="作者最作品的定位"
+                    android:lines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/light_greey"
+                    android:textSize="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        //分割布局
+        <LinearLayout
+            android:id="@+id/author_fragment_divider_layout"
+            android:layout_below="@+id/author_fragment_head_layout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="创客"
+                android:textSize="10dp"
+                android:textColor="@color/theme_txt_color"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@color/light_greey"
+                android:layout_height="0.5dp"/>
+        </LinearLayout>
+
+        //创客们 的布局
+        <GridView
+            android:id="@+id/join_in_creater"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/author_fragment_divider_layout"
+            android:numColumns="2"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/join_in_btn_in_hotpush"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/theme_no_corner_btnbk"
+            android:layout_height="25dp" >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:src="@drawable/join_in"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

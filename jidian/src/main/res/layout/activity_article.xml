@@ -1,0 +1,263 @@
+<com.qidianliterature.jidian.view.StickyNavLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qidianliterature.jidian.activity.ArticleActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/id_stickynavlayout_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Image_surface"
+            android:layout_width="match_parent"
+            android:layout_height="182.5dp"
+            android:background="@drawable/surface" />
+
+        <TextView
+            android:id="@+id/Article_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:text="假如爱有天意"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <com.qidianliterature.jidian.view.RoundImageView
+            android:id="@+id/Writer_Pic_In_ArticleActivity"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/textView_WriterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="revive"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Article_Tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="1112次阅读 2015-08-18开始创作"
+            android:textColor="@color/divider_line_color"
+            android:textSize="9dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Button_Greater"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/ic_greater" />
+
+                <TextView
+                    android:id="@+id/TextView_Grater_Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:text="10"
+                    android:textColor="@color/light_greey"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="21.5dp"
+                android:layout_marginTop="21.5dp"
+                android:background="@color/divider_line_color"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_production"
+                    android:layout_width="23dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/ic_production" />
+
+                <TextView
+                    android:id="@+id/TextView_product_Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="30"
+                    android:textColor="@color/light_greey"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="21.5dp"
+                android:layout_marginTop="21.5dp"
+                android:background="@color/divider_line_color"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_Comment"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/ic_comment" />
+
+                <TextView
+                    android:id="@+id/TextView_Comment_Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:text="23"
+                    android:textColor="@color/light_greey"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"></LinearLayout>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/theme_color"
+                android:text="开始阅读"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"></LinearLayout>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/theme_color"
+                android:text="加入创作"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+        <ImageView
+            android:layout_width="3dp"
+            android:src="@drawable/hotpush_tag"
+            android:layout_height="28dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="作者寄语"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Article_Writer_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="   2003年的大学生梓希（孙艺珍饰）一天收拾房间，无意中发现一个神秘的箱子，里面满载着母亲珠喜（孙艺珍饰）留下的情书，在阅读中她重温着母亲的初恋回忆。1968年的珠喜，是一个清纯可爱的少女，与穷学生俊河（曹承佑饰）一见钟情，由于珠喜显赫的家世，令两人的恋爱陷入俗套的门不当户不对的痛苦纠结中。2003年的梓希爱情同样坎坷，她暗恋着戏剧学会的尚民（赵寅成饰），却一直难以表白自己的爱意。
+ 　　而巧妙的是，梓希发觉母亲的初恋故事跟她自己遭遇十分相似。自己能得到幸福吗？还是如母亲一般曲折难"
+            android:textColor="@color/light_greey"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/normal_margin"
+
+        android:background="@color/white"
+
+        android:layout_height="28dp">
+
+        <ImageView
+            android:layout_width="3dp"
+            android:src="@drawable/hotpush_tag"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/view_part"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/hotpush_title_txt_size"
+            android:layout_marginLeft="17dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.baidu.searchbox.ui.pullrefresh.PullToRefreshListView
+        android:id="@+id/id_stickynavlayout_listview"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_height="match_parent"/>
+
+</com.qidianliterature.jidian.view.StickyNavLayout>

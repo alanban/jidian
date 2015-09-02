@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qidianliterature.jidian.activity.ActivityReadingActivity">
+
+    <!--<include layout="@layout/article_adapter_layout"/>-->
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/TopLayout">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Article_imageView"
+            android:background="@color/divider_line_color"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/Article_imageView"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="大头先生"
+                android:id="@+id/Article_textView_AccountName"
+                android:textColor="@color/black"
+                android:textSize="13.5dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/Article_textView_AccountBrief"
+                android:textColor="@color/divider_line_color"
+                android:textSize="13.5dp"/>
+        </LinearLayout>
+        <TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="9dp"
+        android:textSize="13.5dp"
+        android:textColor="@color/divider_line_color"
+        android:text="23"
+        android:id="@+id/Article_textView_dianzanNub" />
+        <ImageButton
+            android:layout_toLeftOf="@+id/Article_textView_dianzanNub"
+            android:layout_width="23dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="200dp"
+            android:id="@+id/Article_imageButton_dianzan"
+            android:background="@drawable/article_adpater_bt_selector"/>
+
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/TopLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/ViewPage_ReadArticle">
+
+    </android.support.v4.view.ViewPager>
+
+
+        <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/Article_mark"
+
+        android:background="@mipmap/article_mark"/>
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_greey"
+                android:id="@+id/TextView_CurrentSectionNum"
+                android:text="1"
+                android:textSize="@dimen/inner_sight_txt_size"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_greey"
+                android:text="OF"
+                android:textSize="@dimen/inner_sight_txt_size"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:id="@+id/TextView_SectionNumIntotal"
+                android:textColor="@color/light_greey"
+                android:textSize="@dimen/inner_sight_txt_size"/>
+        </LinearLayout>
+        <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="26.5dp"
+        android:layout_height="31.5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/article_comment"
+
+        android:background="@drawable/comment_pic"/>
+
+</RelativeLayout>

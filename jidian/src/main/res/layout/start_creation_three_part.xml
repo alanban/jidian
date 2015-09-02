@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/start_creation_bk"
+        android:orientation="vertical"
+        android:layout_height="186dp">
+
+        <TextView
+            android:id="@+id/title_in_three_part"
+            android:layout_width="wrap_content"
+            android:text="假如爱有天意"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/creation_part_normal_txt_size"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/autthoer_name_in_three_part"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:text="李健"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:scrollbars="none"
+        android:layout_height="158dp">
+
+        <LinearLayout
+            android:id="@+id/conver_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:background="@color/light_theme_color"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cover_1"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/bk11"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/normal_margin"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:background="@color/light_theme_color"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cover_2"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bk12"
+                    android:background="@color/theme_color"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:background="@color/light_theme_color"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cover_3"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/bk13"
+                    android:scaleType="centerCrop"
+                    android:background="@color/theme_color"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

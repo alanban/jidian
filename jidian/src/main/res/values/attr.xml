@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- customize circle/round imageview attribute -->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <!-- customize circle/round imageview attribute -->
+
+
+    <!-- customize Adapt TextView attributes -->
+    <attr name="txtColor" format="color" />
+    <attr name="txtSize" format="dimension" />
+    <attr name="txt" format="string" />
+
+    <declare-styleable name="AdaptTextView">
+        <attr name="txtColor" />
+        <attr name="txtSize" />
+        <attr name="txt" />
+    </declare-styleable>
+    <!-- customize Adapt TextView attributes -->
+
+    <!-- simple swipe title attrs -->
+    <attr name="text_color" format="color"/>
+    <attr name="text_unclicked_color" format="color"/>
+    <attr name="indicator_color" format="color"/>
+
+    <declare-styleable name="SimpleSwipeIndicator">
+        <attr name="text_color" />
+        <attr name="indicator_color" />
+        <attr name="text_unclicked_color" />
+    </declare-styleable>
+    <!-- simple swipe title attrs -->
+</resources>

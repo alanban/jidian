@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header_content"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/picture_pull_to_refresh_height_height" 
+    android:paddingBottom="0dp"
+    android:background="#FF0000"
+    android:gravity="center_horizontal">
+<!-- android:background="#ededed" -->
+    <ImageView
+        android:id="@+id/pull_to_refresh_header_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pull_refresh_arrow_down" />
+    
+    <com.baidu.searchbox.ui.SmoothProgressBar
+        android:id="@+id/pull_to_refresh_header_progressbar"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/update_loading_progressbar_anim"
+        android:visibility="invisible"/>
+    
+    <RelativeLayout
+        android:id="@+id/pull_to_refresh_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pull_to_refresh_header_arrow"
+        android:layout_centerInParent="true">
+        <!-- 说明：这里将textview的宽度从wrap_content改为具体的数字，目的是为了防止在不断的设置text的时候引起的频繁layout，从而影响效率 -->
+        <TextView
+            android:id="@+id/pull_to_refresh_header_hint_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pull_to_refresh_header_hint_normal"
+            android:textSize="@dimen/picture_pull_to_refresh_loading_text_size" 
+            android:textColor="@color/picture_loading_text_color"/>
+        <TextView
+            android:id="@+id/pull_to_refresh_last_update_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/picture_pull_to_refresh_last_update_time_top_margin"
+            android:text="@string/pull_to_refresh_header_last_time"
+            android:textSize="@dimen/picture_pull_to_refresh_last_update_time_text_size" 
+            android:visibility="gone"
+            android:textColor="@color/picture_pullrefresh_last_update_time_color"
+            android:layout_below="@id/pull_to_refresh_header_hint_textview"/>
+        <TextView
+            android:id="@+id/pull_to_refresh_header_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/pull_to_refresh_last_update_time_text"
+            android:layout_marginTop="@dimen/picture_pull_to_refresh_last_update_time_top_margin"
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/picture_pull_to_refresh_last_update_time_text_size"
+            android:textColor="@color/picture_pullrefresh_last_update_time_color"
+            android:layout_below="@id/pull_to_refresh_header_hint_textview"/>
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/50317_000/Desktop/jidian/pullToRefreshContainer/src/main/res/layout/pull_to_refresh_header.xml -->

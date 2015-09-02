@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotpush_outer_refresher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/title_height">
+
+    <ScrollView
+        android:id="@+id/hotpush_content_scrollview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@color/bk_color"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/hotpush_pager"
+                    android:layout_width="match_parent"
+                    android:background="@color/theme_color"
+                    android:layout_height="@dimen/banner_height"/>
+                <LinearLayout
+                    android:id="@+id/index_container"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <!-- 热门作品的布局容器 -->
+            <LinearLayout
+                android:id="@+id/hot_product_container"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    
+                    <ImageView
+                        android:layout_width="3dp"
+                        android:src="@drawable/hotpush_tag"
+                        android:layout_height="28dp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/hotpush_txt"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/hotpush_title_txt_size"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 近期更新的布局容器 -->
+            <LinearLayout
+                android:id="@+id/recently_update_container"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="3dp"
+                        android:src="@drawable/hotpush_tag"
+                        android:layout_height="28dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/recently_txt"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/hotpush_title_txt_size"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 美图加载中文字色 -->
+    <color name="picture_loading_text_color">#999999</color>
+    <color name="picture_pullrefresh_last_update_time_color">#b6b6b6</color>
+    <color name="white">#FFFFFF</color>
+</resources>

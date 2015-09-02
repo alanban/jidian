@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_icon"
+        android:orderInCategory="100"
+        android:title="@string/app_name"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/over_flow"
+        android:icon="@drawable/over_flow_icon"
+        android:orderInCategory="100"
+        android:title="@string/app_name"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/submenu1"
+                android:title="Accept"
+                android:titleCondensed="Accept" />
+            <item
+                android:id="@+id/submenu2"
+                android:title="Cancel"
+                android:titleCondensed="Cancel" />
+            <item
+                android:id="@+id/submenu3"
+                android:title="Unread"
+                android:titleCondensed="Unread" />
+        </menu>
+    </item>
+
+</menu>

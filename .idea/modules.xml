@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bmob_Sample_fast/bmob_Sample_fast.iml" filepath="$PROJECT_DIR$/bmob_Sample_fast/bmob_Sample_fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jidian.iml" filepath="$PROJECT_DIR$/jidian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jidian/jidian-jidian.iml" filepath="$PROJECT_DIR$/jidian/jidian-jidian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefreshContainer/pullToRefreshContainer.iml" filepath="$PROJECT_DIR$/pullToRefreshContainer/pullToRefreshContainer.iml" />
+    </modules>
+  </component>
+</project>

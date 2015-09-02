@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--306-->
+    <!--387-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="171dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="57dp"
+        android:text="    写作是一种信念的行动，不是语法的技巧。
+                               ————怀特"
+        android:textColor="@color/light_greey"
+        android:textSize="@dimen/creation_part_normal_txt_size" />
+
+</RelativeLayout>

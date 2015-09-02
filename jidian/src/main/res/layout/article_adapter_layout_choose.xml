@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/Article_ListView_1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <com.qidianliterature.jidian.view.RoundImageView
+                android:id="@+id/ArticleListView_WriterPic_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile1" />
+
+            <TextView
+                android:id="@+id/ArticleListView_WriterName"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ArticleListView_WriterPic_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:text="李健健健健健健"
+                android:textColor="@color/white"
+                android:textSize="@dimen/inner_sight_txt_size" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ArticleListView_ArticleContent"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="5"
+            android:text="2003年的大学生梓希（孙艺珍饰）一天收拾房间，无意中发现一个神秘的箱子，里面满载着母亲珠喜（孙艺珍饰）留下的情书，在阅读中她重温着母亲的初恋回忆。1968年的珠喜，是一个清纯可爱的少女，与穷学生俊河（曹承佑饰）一见钟情，由于珠喜显赫的家世，令两人的恋爱陷入俗套的门不当户不对的痛苦纠结中。2003年的梓希爱情同样坎坷，她暗恋着戏剧学会的尚民（赵寅成饰），却一直难以表白自己的爱意。
+ 　　而巧妙的是，梓希发觉母亲的初恋故事跟她自己遭遇十分相似。自己能得到幸福吗？还是如母亲一般曲折难"
+            android:textColor="@color/white"
+            android:textSize="@dimen/inner_sight_txt_size" />
+
+        <RelativeLayout
+            android:id="@+id/rightLayout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/white" />
+
+            <com.qidianliterature.jidian.view.RoundImageView
+                android:id="@+id/ArticleListView_WriterPic_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile1" />
+
+            <TextView
+                android:id="@+id/ArticleListView_WriterName1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ArticleListView_WriterPic_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:text="李健健健健健健"
+                android:textColor="@color/white"
+                android:textSize="@dimen/inner_sight_txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/white" />
+
+</LinearLayout>

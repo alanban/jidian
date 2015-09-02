@@ -1,0 +1,17 @@
+<resources>
+    <color name="theme_color">#39c49c</color>
+    <color name="light_theme_color">#e8faf5</color>
+    <color name="theme_txt_color">#87e1c7</color>
+
+    <color name="divider_line_color">#c0c0c0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bk_color">#f3eee8</color>
+    <color name="menu_line">#46d1a9</color>
+    <color name="clicked_theme_color">#36ad8b</color>
+    <color name="light_greey">#969696</color>
+    <color name="title_unclicked_txt_color">#bfe9dd</color>
+    <color name="Article_ListView_1">#7be1c4</color>
+    <color name="Article_ListView_2">#6dd1e7</color>
+
+</resources>

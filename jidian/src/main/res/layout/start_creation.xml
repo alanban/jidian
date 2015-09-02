@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.qidianliterature.jidian.view.StaticViewPager
+        android:id="@+id/creation_step_container"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+    </com.qidianliterature.jidian.view.StaticViewPager>
+
+    <RelativeLayout
+        android:id="@+id/towards_layout_in_start_creation"
+        android:layout_width="145dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/theme_circle_bk"
+        android:layout_height="145dp">
+
+        <ImageView
+            android:id="@+id/towards_icon"
+            android:layout_width="58dp"
+            android:src="@drawable/circle_arrow"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_height="58dp" />
+
+        <TextView
+            android:id="@+id/inner_text"
+            android:layout_width="match_parent"
+            android:text="开始\n创作之旅"
+            android:textSize="@dimen/txt_size"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

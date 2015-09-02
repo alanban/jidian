@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+
+    <!-- hotpush dimens-->
+    <dimen name="fragment_foot_view_height">26dp</dimen>
+    <dimen name="fragment_recent_height">83dp</dimen>
+    <dimen name="banner_tips_size">5dp</dimen>
+    <dimen name="banner_height">127dp</dimen>
+    <dimen name="hotpush_title_txt_size">15dp</dimen>
+    <dimen name="hotpush_product_profile_size">80dp</dimen>
+
+    <!-- 文章在外部呈现的文字大小 -->
+    <dimen name="outer_sight_txt_size">13dp</dimen>
+    <!-- 正式阅读文章的文字大小 -->
+    <dimen name="inner_sight_txt_size">13dp</dimen>
+    <!-- hotpush dimens-->
+
+    <dimen name="txt_size">25dp</dimen>
+    <dimen name="creation_part_normal_txt_size">20dp</dimen>
+    <dimen name="cover_width">135dp</dimen>
+    <dimen name="cover_height">158dp</dimen>
+
+</resources>
